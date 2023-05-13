@@ -1,0 +1,19 @@
+.Btn {
+    padding: .5em 1em;
+    color: #fff;
+    border: none;
+    background-color: #40CB98;
+    border-radius: 4px;
+    outline: none;
+    margin-right: .5em;
+    transition: background-color .3s;
+    margin-top: .5em;
+}
+
+.Btn:hover {
+    background-color: #40CB98;
+}
+
+.Btn:active {
+    background-color: #028A4F;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:controller="controller.FontSetter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="45.0" prefWidth="213.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="52.0" text="Style: ">
+               <HBox.margin>
+                  <Insets left="40.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="style_box" focusTraversable="false" prefHeight="25.0" prefWidth="135.0">
+               <HBox.margin>
+                  <Insets right="15.0" top="15.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="213.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="52.0" text="Family: ">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="40.0" right="5.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="family_box" focusTraversable="false" prefHeight="44.0" prefWidth="134.0">
+               <HBox.margin>
+                  <Insets bottom="13.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <VBox prefHeight="87.0" prefWidth="271.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="225.0">
+               <children>
+                  <Label text="Size text: ">
+                     <HBox.margin>
+                        <Insets left="15.0" right="5.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="size" editable="false" focusTraversable="false" prefHeight="25.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="13.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Slider fx:id="size_slider" focusTraversable="false" max="96.0" min="1.0" prefHeight="35.0" prefWidth="262.0" showTickLabels="true" showTickMarks="true">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </Slider>
+         </children>
+      </VBox>
+      <Pane prefHeight="42.0" prefWidth="271.0">
+         <children>
+            <Button focusTraversable="false" layoutX="171.0" layoutY="7.0" mnemonicParsing="false" onAction="#save" text="Save" />
+            <Button focusTraversable="false" layoutX="219.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" text="Cancel" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

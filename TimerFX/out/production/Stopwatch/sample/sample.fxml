@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="126.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox fx:id="sliders" layoutX="138.0" layoutY="-2.0" prefHeight="89.0" prefWidth="271.0">
+         <children>
+            <Slider fx:id="hours" blockIncrement="1.0" focusTraversable="false" max="23.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Slider>
+            <Slider fx:id="minutes" blockIncrement="1.0" focusTraversable="false" max="59.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Slider>
+            <Slider fx:id="seconds" blockIncrement="1.0" focusTraversable="false" max="59.0" showTickMarks="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Slider>
+         </children>
+      </VBox>
+      <Text fx:id="time" fontSmoothingType="LCD" layoutX="1.0" layoutY="59.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="0:00:00" textAlignment="CENTER" wrappingWidth="136.3828125">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <HBox layoutX="31.0" layoutY="68.0" prefHeight="55.0" prefWidth="331.0">
+         <children>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#begin" prefHeight="25.0" prefWidth="55.0" style="-fx-border-color: grey;" text="Begin">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="stop_continue" focusTraversable="false" mnemonicParsing="false" onAction="#stop_continue" prefHeight="7.0" prefWidth="43.0" style="-fx-border-color: grey;" text="Stop">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="64.0" style="-fx-border-color: grey;" text="Reset">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#anew" style="-fx-border-color: grey;" text="Anew">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

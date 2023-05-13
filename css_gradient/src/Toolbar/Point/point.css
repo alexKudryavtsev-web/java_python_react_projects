@@ -1,0 +1,16 @@
+.Point {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Point-colorPicker {
+    margin: 1.5rem;
+}
+
+.chrome-picker {
+    box-shadow: none!important;
+    border: 1px solid #ccc;
+    padding: .2rem;
+    font-family: 'Montserrat', sans-serif!important;
+}

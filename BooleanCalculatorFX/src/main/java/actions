@@ -1,0 +1,16 @@
+∨ = addDisjunction
+∧ = addConjunction
+^ = addXor
+≡ = addEquiv
+⇒ = addImplic
+¬ = addNot
+----------------------------
+0 = addFalse
+1 = addTrue
+----------------------------
+( = addRightBracket
+) = addLeftBracket
+----------------------------
+'=' = calc
+----------------------------
+textField = fx:id = "text"

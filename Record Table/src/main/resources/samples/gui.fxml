@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="426.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <MenuBar fx:id="bar" prefHeight="25.0" prefWidth="763.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="open" mnemonicParsing="false" text="Open CSV" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" text="Save CSV" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="settings" mnemonicParsing="false" text="Settings" />
+               </items></Menu>
+          <Menu fx:id="added" mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem fx:id="adder" mnemonicParsing="false" text="Added" />
+                  <MenuItem fx:id="deleted" mnemonicParsing="false" text="Deleted" />
+                  <MenuItem fx:id="replaced" mnemonicParsing="false" text="Replaced" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="clear" mnemonicParsing="false" text="Clear" />
+                  <MenuItem fx:id="duplicate" mnemonicParsing="false" text="Remove Duplicate" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="size" layoutX="14.0" layoutY="387.0" prefHeight="17.0" prefWidth="56.0" text="Size: " AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="693.0" AnchorPane.topAnchor="387.0" />
+      <TableView fx:id="table" focusTraversable="false" layoutX="12.0" layoutY="37.0" opacity="0.94" prefHeight="345.0" prefWidth="739.0">
+        <columns>
+            <TableColumn fx:id="name_column" prefWidth="134.0" text="Name" />
+            <TableColumn fx:id="email_column" prefWidth="168.0" text="Email" />
+            <TableColumn fx:id="phone_column" prefWidth="197.0" text="Phone Number" />
+            <TableColumn fx:id="comment_column" prefWidth="239.0" text="Comment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <TextField fx:id="path" focusTraversable="false" layoutX="17.0" layoutY="14.0" onAction="#search" prefHeight="27.0" prefWidth="539.0" promptText="domain name">
+         <contextMenu>
+            <ContextMenu fx:id="menu_bar">
+              <items>
+                  <MenuItem fx:id="save_button" mnemonicParsing="false" onAction="#save" text="Save in file" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem mnemonicParsing="false" onAction="#clear" text="Clear" />
+              </items>
+            </ContextMenu>
+         </contextMenu></TextField>
+      <Pagination fx:id="data" focusTraversable="false" layoutX="17.0" layoutY="48.0" maxPageIndicatorCount="4" pageCount="4" prefHeight="284.0" prefWidth="539.0" style="-fx-border-color: grey;" />
+      <Text fx:id="errors_field" fontSmoothingType="LCD" layoutX="152.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No data" textAlignment="CENTER" wrappingWidth="268.638671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

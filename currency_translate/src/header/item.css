@@ -1,0 +1,19 @@
+.Item {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    border-bottom: 1px solid #ccc;
+    transition: background-color .5s;
+}
+
+.Item:hover {
+    background-color: #f2f2f2;
+}
+
+.Item-name {
+    flex: 1;
+}
+
+.Item-number {
+    font-weight: bold;
+}

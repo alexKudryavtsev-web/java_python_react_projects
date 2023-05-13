@@ -1,0 +1,13 @@
+.Result {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Result-code {
+    font-family: 'Consolas';
+}
+
+.Result-copyBtn {
+    margin-bottom: 15px;
+}

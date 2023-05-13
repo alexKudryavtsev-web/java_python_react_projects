@@ -1,0 +1,27 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.modal-body {
+    width: 500px;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    font-weight: 300;
+}

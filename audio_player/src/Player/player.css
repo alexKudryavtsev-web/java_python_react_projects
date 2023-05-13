@@ -1,0 +1,56 @@
+.Player {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background: #fff;
+}
+
+.Toddler {
+    -webkit-appearance: none;
+    flex: 1;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 10px;
+}
+  
+.Toddler::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 15px;
+    background: #3399ff;
+    cursor: pointer;
+}
+
+.Time {
+    font-size: 1em;
+    padding: 1em;
+    min-width: 100px;
+}
+
+.Btn {
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1890ff;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin: 0 .5em;
+}
+
+.Btn svg {
+    margin-right: 10px;
+}
+
+.Btn__success {
+    background-color: #009933;
+}
+
+.Btn__danger {
+    background-color: #FF4D4F;
+}

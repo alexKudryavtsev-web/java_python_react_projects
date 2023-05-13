@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="controller.EraserTuner" prefHeight="93.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="237.0">
+            <children>
+                <Label prefHeight="17.0" prefWidth="80.0" text="Eraser Width: ">
+                    <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                    </HBox.margin>
+                </Label>
+                <ComboBox fx:id="lineBox" focusTraversable="false" onAction="#setLine" prefHeight="42.0" prefWidth="88.0">
+                    <HBox.margin>
+                        <Insets left="10.0" right="15.0" top="10.0" />
+                    </HBox.margin>
+                </ComboBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button focusTraversable="false" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="63.0" text="Save">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="35.0" right="15.0" top="15.0" />
+                    </HBox.margin>
+                </Button>
+                <Button focusTraversable="false" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="63.0" text="Cancel">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

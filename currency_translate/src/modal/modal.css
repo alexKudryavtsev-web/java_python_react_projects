@@ -1,0 +1,40 @@
+.Modal {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Modal-body {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.Modal-header {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.Modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;
+}
+
+.Modal-content {
+    height: 60vh;
+    padding: 1.1rem;
+    margin: .5rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}

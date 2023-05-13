@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="479.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RecordGuiController">
+    <children>
+        <ToolBar fx:id="toolbar" layoutX="56.0" layoutY="438.0" prefHeight="42.0" prefWidth="512.0" style="-fx-border-color: grey;">
+            <items>
+                <ImageView fitHeight="31.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/deleteIcon.png" />
+                    </image>
+                </ImageView>
+                <Button focusTraversable="false" mnemonicParsing="false" onAction="#delete" text="Delete">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clear" text="Clear">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+                <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="152.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/statisticsIcon.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="187.0" layoutY="14.0" mnemonicParsing="false" onAction="#showStatistics" text="Statistics">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Separator layoutX="263.0" layoutY="10.0" orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+                <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="273.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/saveIcon.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="316.0" layoutY="14.0" mnemonicParsing="false" onAction="#save" text="Save">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Button layoutX="423.0" layoutY="14.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Separator layoutX="356.0" layoutY="10.0" orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+                <CheckBox fx:id="readingModeBox" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" text="Reading mode" />
+            </items>
+        </ToolBar>
+        <HTMLEditor fx:id="editorField" layoutX="10.0" layoutY="6.0" prefHeight="426.0" prefWidth="617.0" />
+        <WebView fx:id="readField" layoutX="10.0" layoutY="6.0" prefHeight="426.0" prefWidth="617.0" visible="false" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+.App {
+    display: flex;
+}
+
+.Column {
+    flex: 1;
+    margin: .5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1.5em 2em;
+    font-size: 1em;
+    position: relative;
+}
+
+.Column-extend {
+    background-color: #111;
+    width: 5px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+}

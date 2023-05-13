@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.Header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+
+.Header-title {
+    flex: 2;
+    font-size: 2em;
+}
+
+.Header-subtitle {
+    font-size: 1.5em;
+    padding-right: 1rem;    
+}
+
+.Header-icon {
+    padding-right: 1rem;
+}

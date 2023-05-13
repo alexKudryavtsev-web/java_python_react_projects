@@ -1,0 +1,73 @@
+.Form {
+    padding: 1em .5em 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.Form > * {
+    margin: .5em 0;
+}
+
+.Text,
+.Password {
+    padding: .5em;
+    font-size: 1em;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #d9d9d9;
+    transition: all .3s;
+    color: #333;
+}
+
+.Password {
+    letter-spacing: 1px;
+}
+
+.Warning {
+    color: #ff6666;
+}
+
+.Text:focus,
+.Password:focus {
+    border-color: #40a9ff;
+    border-right-width: 1px!important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(24,144,255,.2);
+    box-shadow: 0 0 0 2px rgba(24,144,255,.2);
+}
+
+.Submit,
+.Reset {
+    padding: 1em;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: none;
+    transition: background .2s;
+}
+
+.Reset {
+    background-color: #ff4d4d;
+}
+
+.Reset:hover {
+    background-color: #ff6666;
+}
+
+.Reset:active {
+    background-color: #ff9999;
+}
+
+.Submit {
+    background-color: #6699ff;
+}
+
+.Submit:hover {
+    background-color: #99bbff;
+}
+
+.Submit:active {
+    background-color: #b3ccff;
+}

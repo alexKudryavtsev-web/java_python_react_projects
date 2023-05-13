@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <center>
+      <Pane fx:id="input_node" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="canvas" height="373.0" width="713.0" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <VBox prefHeight="112.0" prefWidth="713.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="120.0" prefWidth="713.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="200.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <VBox prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/file_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="file_button" focusTraversable="false" mnemonicParsing="false" onAction="#file" prefHeight="25.0" prefWidth="72.0" text="File">
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/brush_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="brush_button" focusTraversable="false" mnemonicParsing="false" onAction="#brush" prefHeight="25.0" prefWidth="72.0" text="Brush">
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/eraser_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="eraser_button" focusTraversable="false" mnemonicParsing="false" onAction="#eraser" prefHeight="25.0" prefWidth="72.0" text="Eraser">
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/text_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button focusTraversable="false" mnemonicParsing="false" onAction="#text" prefHeight="25.0" prefWidth="72.0" text="Text">
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="121.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/photo_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button focusTraversable="false" mnemonicParsing="false" onAction="#photo" prefHeight="25.0" prefWidth="72.0" text="Photo">
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox fx:id="button_root" prefHeight="139.0" prefWidth="83.0">
+                     <children>
+                        <Button focusTraversable="false" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="62.0" text="Back">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="35.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button focusTraversable="false" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="73.0" text="Next">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

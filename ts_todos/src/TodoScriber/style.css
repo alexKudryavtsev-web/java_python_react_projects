@@ -1,0 +1,42 @@
+.TodoScriber {
+    display: flex;
+    align-items: center;
+}
+
+.Input {
+    padding: .5em;
+    font-size: 1em;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #d9d9d9;
+    transition: all .3s;
+    color: #333;
+    flex: 1;
+}
+
+.Input:focus {
+    border-color: #40a9ff;
+    border-right-width: 1px!important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(24,144,255,.2);
+    box-shadow: 0 0 0 2px rgba(24,144,255,.2);
+}
+
+.Submit {
+    padding: .5em 1em;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: none;
+    background-color: #9887EF;
+    transition: background .2s;
+}
+
+.Submit:hover {
+    background-color: #8374D5;
+}
+
+.Submit:active {
+    background-color: #6664B2;
+}

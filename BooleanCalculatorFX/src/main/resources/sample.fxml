@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="184.0" style="-fx-background-color: WhiteSmoke;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField alignment="CENTER_RIGHT" layoutX="15.0" layoutY="14.0" prefHeight="34.0" prefWidth="154.0" text="0 =&gt; 1" />
+      <Button layoutX="15.0" layoutY="60.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="74.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="0" />
+      <Button layoutX="95.0" layoutY="60.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="74.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="1" />
+      <Button layoutX="15.0" layoutY="93.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="∨" />
+      <Button layoutX="59.0" layoutY="93.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="∨" />
+      <Button layoutX="106.0" layoutY="93.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="∨" />
+      <Button layoutX="15.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="∨" />
+      <Button layoutX="59.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="∨" />
+      <Button layoutX="106.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="36.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="∨" />
+      <Button layoutX="148.0" layoutY="105.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="30.0" style="-fx-border-color: LightSteelBlue; -fx-background-color: WhiteSmoke;" text="=" />
+   </children>
+</Pane>

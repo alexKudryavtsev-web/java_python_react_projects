@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox fx:controller="controllers.Change" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="244.0" prefWidth="456.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="71.0" text="Name:">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="name" focusTraversable="false" prefHeight="25.0" prefWidth="182.0">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="71.0" text="Email:">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="email" focusTraversable="false" prefHeight="25.0" prefWidth="184.0">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="65.0" prefHeight="31.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="71.0" text="Phone:">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="phone" focusTraversable="false" prefHeight="25.0" prefWidth="180.0">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="105.0" prefHeight="31.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="71.0" text="About:">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="about" focusTraversable="false" prefHeight="25.0" prefWidth="187.0">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="222.0" prefWidth="403.0">
+         <children>
+            <ChoiceBox fx:id="box" onAction="#setBox" prefHeight="25.0" prefWidth="184.0">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Button mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="55.0" text="Save">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="55.0" text="Cancel">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>

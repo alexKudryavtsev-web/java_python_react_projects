@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.controlsfx.control.RangeSlider?>
+<?import org.controlsfx.control.ToggleSwitch?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0"
+            prefWidth="773.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.Controller">
+    <top>
+        <ToolBar prefHeight="48.0" prefWidth="773.0" BorderPane.alignment="CENTER">
+            <items>
+                <Button focusTraversable="false" mnemonicParsing="false" onAction="#search"
+                        style="-fx-background-color: lightgrey;" text="Поиск">
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@searchIcon.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <TextField fx:id="type" focusTraversable="false" prefHeight="25.0" prefWidth="434.0"
+                           promptText="запрос"/>
+                <ComboBox fx:id="searchTypeBox" onAction="#selectSearchType" prefHeight="31.0" prefWidth="129.0" promptText="тип поиска"
+                          style="-fx-background-color: lightgrey;"/>
+                <TextField fx:id="limit" prefHeight="25.0" prefWidth="105.0" promptText="лимит" text="10"/>
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <TabPane prefHeight="412.0" prefWidth="617.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+                <Tab text="Результат поиска">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="table" disable="false" editable="true" prefHeight="406.0"
+                                           prefWidth="586.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="idColumn" prefWidth="93.0" text="id"/>
+                                        <TableColumn fx:id="specColumn" prefWidth="160.0" text="Специализация"/>
+                                        <TableColumn fx:id="dateStart" prefWidth="135.0" text="Дата заявки"/>
+                                        <TableColumn fx:id="salaryColmn" prefWidth="190.0" text="Зарплата"/>
+                                    </columns>
+                                    <contextMenu>
+                                        <ContextMenu>
+                                            <items>
+                                                <MenuItem accelerator="SHORTCUT+F" mnemonicParsing="false" text="Добавить в фавориты">
+                                                    <graphic>
+                                                        <ImageView fitHeight="20.0" fitWidth="20.0"
+                                                                   pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@favoritesIcon.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </MenuItem>
+                                                <MenuItem accelerator="SHORTCUT+X" mnemonicParsing="false" text="Добавить в мусор">
+                                                    <graphic>
+                                                        <ImageView fitHeight="20.0" fitWidth="20.0"
+                                                                   pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@deleteIcon.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </MenuItem>
+                                                <MenuItem accelerator="SHORTCUT+D" mnemonicParsing="false" text="Описание">
+                                                    <graphic>
+                                                        <ImageView fitHeight="20.0" fitWidth="20.0"
+                                                                   pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@descIcon.png"/>
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </MenuItem>
+                                            </items>
+                                        </ContextMenu>
+                                    </contextMenu>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                    <graphic>
+                        <ImageView fitHeight="58.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@listIcon.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Tab>
+                <Tab text="Фавориты">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                    </content>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@favoritesIcon.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Tab>
+                <Tab text="Мусор">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                    </content>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@deleteIcon.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+    <right>
+        <ToolBar orientation="VERTICAL" prefHeight="421.0" prefWidth="182.0" BorderPane.alignment="CENTER">
+            <items>
+                <ComboBox fx:id="employmentBox" focusTraversable="false" onAction="#selectEmployment" prefHeight="32.0"
+                          prefWidth="177.0" promptText="Занятость" style="-fx-background-color: lightgrey;"/>
+                <ComboBox fx:id="orderBox" focusTraversable="false" onAction="#selectOrder" prefHeight="32.0"
+                          prefWidth="177.0" promptText="Порядок" style="-fx-background-color: lightgrey;"/>
+                <ComboBox fx:id="scheduleBox" focusTraversable="false" onAction="#selectSchedule" prefHeight="32.0"
+                          prefWidth="177.0" promptText="График" style="-fx-background-color: lightgrey;"/>
+                <ComboBox fx:id="experienceBox" focusTraversable="false" onAction="#selectExperience" prefHeight="32.0"
+                          prefWidth="177.0" promptText="Опыт" style="-fx-background-color: lightgrey;"/>
+                <Separator prefHeight="1.0" prefWidth="132.0"/>
+                <HBox prefHeight="30.0" prefWidth="152.0">
+                    <children>
+                        <TextField fx:id="addressField" focusTraversable="false" prefHeight="25.0" prefWidth="136.0"
+                                   promptText="адресс" style="-fx-background-color: lightgrey;">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" top="2.0"/>
+                            </HBox.margin>
+                        </TextField>
+                        <Button focusTraversable="false" mnemonicParsing="false" onAction="#showMap" prefHeight="30.0"
+                                prefWidth="8.0" style="-fx-border-color: grey;">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@mapIcon.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="5.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets top="5.0"/>
+                    </padding>
+                </HBox>
+                <Separator layoutX="10.0" layoutY="154.0" prefHeight="1.0" prefWidth="132.0"/>
+                <Pane prefHeight="109.0" prefWidth="177.0">
+                    <children>
+                        <RangeSlider fx:id="salarySlider" focusTraversable="false" layoutX="5.0" layoutY="35.0"
+                                     prefHeight="25.0" prefWidth="161.0" showTickMarks="true" snapToTicks="true"/>
+                        <TextField fx:id="lowSalary" editable="false" focusTraversable="false" layoutX="5.0"
+                                   layoutY="68.0" prefHeight="25.0" prefWidth="77.0" promptText="начало"
+                                   style="-fx-background-color: lightgrey;"/>
+                        <TextField fx:id="hightSalary" editable="false" focusTraversable="false" layoutX="89.0"
+                                   layoutY="68.0" prefHeight="25.0" prefWidth="77.0" promptText="конец"
+                                   style="-fx-background-color: lightgrey;"/>
+                        <ToggleSwitch fx:id="isOnlySalary" focusTraversable="false" layoutX="5.0" layoutY="3.0"
+                                      prefHeight="23.0" prefWidth="103.0" selected="true" text="Зарплата"/>
+                    </children>
+                </Pane>
+            </items>
+        </ToolBar>
+    </right>
+</BorderPane>

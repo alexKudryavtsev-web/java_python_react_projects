@@ -1,0 +1,31 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    padding-top: 5em;
+}
+
+/*Text*/
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./font/OpenSans-Regular.ttf')
+}
+
+/*Header and title*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./font/Montserrat-Regular.ttf')
+}
+
+/*Footer*/
+@font-face {
+    font-family: 'Lato';
+    src: url('./font/Lato-Regular.ttf')
+}

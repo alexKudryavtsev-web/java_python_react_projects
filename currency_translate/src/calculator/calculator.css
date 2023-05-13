@@ -1,0 +1,13 @@
+.Calculator {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.Calculator > * {
+    flex: 1;
+}
+
+.Calculator > *:first-child {
+    margin-right: 1rem;
+}

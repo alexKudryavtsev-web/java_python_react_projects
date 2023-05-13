@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <TextField fx:id="request" focusTraversable="false" onAction="#complete_request" prefHeight="25.0" prefWidth="695.0" promptText="request" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
+      </TextField>
+   </top>
+   <left>
+      <VBox prefHeight="372.0" prefWidth="196.0" BorderPane.alignment="CENTER">
+         <children>
+            <TreeView fx:id="file_tree" focusTraversable="false" prefHeight="407.0" prefWidth="196.0" />
+            <Pane prefHeight="78.0" prefWidth="178.0">
+               <children>
+                  <Button focusTraversable="false" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="55.0" text="Add " />
+                  <Button focusTraversable="false" layoutX="98.0" layoutY="16.0" mnemonicParsing="false" onAction="#remove" prefHeight="20.0" prefWidth="59.0" text="Remove" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="345.0" prefWidth="399.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" focusTraversable="false" layoutX="16.0" prefHeight="391.0" prefWidth="537.0">
+              <columns>
+                <TableColumn fx:id="col_word" prefWidth="142.0" text="Word" />
+                <TableColumn fx:id="col_files" prefWidth="156.0" text="Files" />
+                  <TableColumn fx:id="col_index" prefWidth="238.0" text="Indexs" />
+              </columns>
+            </TableView>
+            <CheckBox fx:id="isShow" focusTraversable="false" layoutX="429.0" layoutY="413.0" mnemonicParsing="false" selected="true" text="Show entry indexes" />
+            <Button focusTraversable="false" layoutX="263.0" layoutY="409.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+</BorderPane>

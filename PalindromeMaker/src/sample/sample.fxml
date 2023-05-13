@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="246.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="55.0" prefWidth="266.0">
+         <children>
+            <Label text="Number:">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="number_field" onAction="#operation" promptText="number">
+               <HBox.margin>
+                  <Insets bottom="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="244.0">
+         <children>
+            <Label text="Result: ">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="result" editable="false" prefHeight="25.0" prefWidth="151.0" promptText="result">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="7.0" right="13.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="65.0" prefHeight="35.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="49.0" text="Quantity:">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="13.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="count" editable="false" prefHeight="25.0" prefWidth="58.0" promptText="count">
+               <HBox.margin>
+                  <Insets bottom="15.0" right="13.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#clear" text="Clear">
+               <HBox.margin>
+                  <Insets bottom="13.0" left="50.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

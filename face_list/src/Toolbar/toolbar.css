@@ -1,0 +1,21 @@
+.Toolbar {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+
+.Toolbar > * {
+    margin-right: .5em;
+}
+
+.Title {
+    font-size: 2rem;
+    color: #111;
+    flex: 2;
+    text-align: start;
+}
+
+.Input {
+    flex: 1;
+}

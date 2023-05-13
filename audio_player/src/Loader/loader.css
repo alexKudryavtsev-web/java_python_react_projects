@@ -1,0 +1,19 @@
+.Upload {
+    opacity: 0;
+}
+
+.CustomUpload {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    border: 3px dashed #3377ff;
+    background-color: #99bbff;
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}

@@ -1,0 +1,15 @@
+.InputCurrency {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+}
+
+.InputCurrency-select {
+    width: 150px;
+}
+
+.InputCurrency-number {
+    margin-top: 1rem!important;
+    width: 100%!important;
+}
